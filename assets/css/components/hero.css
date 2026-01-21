@@ -1,26 +1,22 @@
 .hero {
-  background: #f8fafc;
+  background: var(--bg-light);
+  padding: 100px 0;
 }
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  min-height: 70vh;
-}
-
-.hero-text {
-  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
 }
 
 .hero-text h2 {
-  font-size: 48px;
-  line-height: 1.2;
+  font-size: 40px;
+  margin-bottom: 16px;
 }
 
 .hero-text p {
-  font-size: 18px;
-  margin: 24px 0;
-  color: #444;
+  max-width: 520px;
+  margin-bottom: 24px;
 }
 
 .hero-actions {
