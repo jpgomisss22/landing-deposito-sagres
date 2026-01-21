@@ -3,43 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Depósito Sagres | Pisos & Revestimentos</title>
+  <title>Depósito Sagres | Pisos & Revestimentos Premium</title>
+  <meta name="description" content="Há 15 anos transformando projetos em realidade com pisos e revestimentos de alta qualidade. Solicite seu orçamento.">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
-
-  <!-- Fontes -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/components/header.css">
+  <link rel="stylesheet" href="./assets/css/components/hero.css">
+  <link rel="stylesheet" href="./assets/css/components/sections.css">
+  <link rel="stylesheet" href="./assets/css/components/footer.css">
 </head>
+
 <body>
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container">
+    <div class="container header-container">
       <h1 class="logo">Depósito Sagres</h1>
 
       <nav class="nav">
-        <a href="#">Início</a>
-        <a href="#">Serviços</a>
-        <a href="#">Produtos</a>
-        <a href="#">Contato</a>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+        <a href="#orcamento" class="btn-primary">Orçamento</a>
       </nav>
-
-      <a href="#" class="btn">Orçamento</a>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h2>Qualidade e Excelência em Cada Detalhe</h2>
-      <p>Há 15 anos transformando projetos em realidade.</p>
-    </div>
-  </section>
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h2>Qualidade e Excelência em Cada Detalhe</h2>
+          <p>
+            Há mais de 15 anos transformando projetos em realidade com pisos,
+            revestimentos e acabamentos de alto padrão.
+          </p>
 
-  <!-- JS -->
+          <div class="hero-actions">
+            <a href="#orcamento" class="btn-primary">Solicitar Orçamento</a>
+            <a href="#produtos" class="btn-secondary">Ver Produtos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="benefits">
+      <div class="container">
+        <h3>Por que escolher o Depósito Sagres?</h3>
+
+        <div class="benefits-grid">
+          <div class="benefit">
+            <h4>Experiência Comprovada</h4>
+            <p>Mais de 15 anos atendendo obras residenciais e comerciais.</p>
+          </div>
+
+          <div class="benefit">
+            <h4>Produtos Premium</h4>
+            <p>Trabalhamos apenas com marcas reconhecidas no mercado.</p>
+          </div>
+
+          <div class="benefit">
+            <h4>Atendimento Personalizado</h4>
+            <p>Indicamos a melhor solução para seu projeto.</p>
+          </div>
+
+          <div class="benefit">
+            <h4>Entrega Rápida</h4>
+            <p>Logística eficiente para sua obra não parar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="services">
+      <div class="container">
+        <h3>Serviços</h3>
+
+        <ul class="services-list">
+          <li>Venda de pisos e revestimentos</li>
+          <li>Consultoria para projetos</li>
+          <li>Atendimento para construtoras</li>
+          <li>Orçamentos rápidos e sem compromisso</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="products">
+      <div class="container">
+        <h3>Produtos</h3>
+
+        <div class="products-grid">
+          <div class="product-card">Pisos Porcelanato</div>
+          <div class="product-card">Revestimentos Cerâmicos</div>
+          <div class="product-card">Revestimentos Externos</div>
+          <div class="product-card">Acabamentos Premium</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="orcamento" class="cta">
+      <div class="container cta-container">
+        <h3>Pronto para transformar seu projeto?</h3>
+        <p>Solicite um orçamento agora e fale com um especialista.</p>
+        <a href="#contato" class="btn-primary">Entrar em Contato</a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact">
+      <div class="container">
+        <h3>Contato</h3>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Seu nome" required>
+          <input type="email" placeholder="Seu e-mail" required>
+          <input type="tel" placeholder="Seu telefone">
+          <textarea placeholder="Descreva seu projeto"></textarea>
+
+          <button type="submit" class="btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2026 Depósito Sagres. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
   <script src="./assets/js/script.js"></script>
+
 </body>
 </html>

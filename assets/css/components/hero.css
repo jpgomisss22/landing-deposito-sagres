@@ -1,0 +1,29 @@
+.hero {
+  background: #f8fafc;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 24px 0;
+  color: #444;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
