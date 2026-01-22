@@ -1,25 +1,37 @@
 .hero {
-  background: var(--bg-light);
-  padding: 100px 0;
+  background: #f9fafb;
+  padding: 80px 20px;
 }
 
 .hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
 }
 
-.hero-text h2 {
-  font-size: 40px;
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
   margin-bottom: 16px;
 }
 
-.hero-text p {
-  max-width: 520px;
-  margin-bottom: 24px;
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 32px;
 }
 
 .hero-actions {
   display: flex;
   gap: 16px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
 }
