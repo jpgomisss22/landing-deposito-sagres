@@ -8,6 +8,10 @@
 }
 
 .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,8 +25,9 @@
 }
 
 .logo {
-  max-height: 70px;
+  height: 42px;
   width: auto;
+  display: block;
 }
 
 .nav {
